@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		32D980E11BE9F11C00FA27E5 /* RCTAes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 32D980E01BE9F11C00FA27E5 /* RCTAes.h */; };
 		32D980E31BE9F11C00FA27E5 /* RCTAes.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D980E21BE9F11C00FA27E5 /* RCTAes.m */; };
+		6793992D25A7489700E1E8F5 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793992925A7489700E1E8F5 /* GTMBase64.m */; };
+		6793992E25A7489700E1E8F5 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793992C25A7489700E1E8F5 /* NSData+AES.m */; };
+		6793993225A7493D00E1E8F5 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793993025A7493D00E1E8F5 /* SecurityUtil.m */; };
 		9BE20B5B1E4E1A3700696172 /* AesCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE20B5A1E4E1A3700696172 /* AesCrypt.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,13 @@
 		32D980DD1BE9F11C00FA27E5 /* libRCTAes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTAes.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D980E01BE9F11C00FA27E5 /* RCTAes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAes.h; sourceTree = "<group>"; };
 		32D980E21BE9F11C00FA27E5 /* RCTAes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTAes.m; sourceTree = "<group>"; };
+		6793992825A7489700E1E8F5 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		6793992925A7489700E1E8F5 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		6793992A25A7489700E1E8F5 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		6793992B25A7489700E1E8F5 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		6793992C25A7489700E1E8F5 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		6793993025A7493D00E1E8F5 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		6793993125A7493D00E1E8F5 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
 		9BE20B591E4E1A3700696172 /* AesCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesCrypt.h; sourceTree = "<group>"; };
 		9BE20B5A1E4E1A3700696172 /* AesCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesCrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +73,7 @@
 		32D980DF1BE9F11C00FA27E5 /* RCTAes */ = {
 			isa = PBXGroup;
 			children = (
+				6793992625A747E400E1E8F5 /* AESKit */,
 				32D980E01BE9F11C00FA27E5 /* RCTAes.h */,
 				32D980E21BE9F11C00FA27E5 /* RCTAes.m */,
 				32D981161BE9F1B600FA27E5 /* lib */,
@@ -77,6 +88,20 @@
 				9BE20B5A1E4E1A3700696172 /* AesCrypt.m */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		6793992625A747E400E1E8F5 /* AESKit */ = {
+			isa = PBXGroup;
+			children = (
+				6793993125A7493D00E1E8F5 /* SecurityUtil.h */,
+				6793993025A7493D00E1E8F5 /* SecurityUtil.m */,
+				6793992B25A7489700E1E8F5 /* GTMBase64.h */,
+				6793992925A7489700E1E8F5 /* GTMBase64.m */,
+				6793992825A7489700E1E8F5 /* GTMDefines.h */,
+				6793992A25A7489700E1E8F5 /* NSData+AES.h */,
+				6793992C25A7489700E1E8F5 /* NSData+AES.m */,
+			);
+			path = AESKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE20B5B1E4E1A3700696172 /* AesCrypt.m in Sources */,
+				6793992D25A7489700E1E8F5 /* GTMBase64.m in Sources */,
+				6793992E25A7489700E1E8F5 /* NSData+AES.m in Sources */,
+				6793993225A7493D00E1E8F5 /* SecurityUtil.m in Sources */,
 				32D980E31BE9F11C00FA27E5 /* RCTAes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

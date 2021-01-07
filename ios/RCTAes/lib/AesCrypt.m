@@ -1,12 +1,10 @@
 //
 //  AesCrypt.m
 //
-//
-//  TaeHeun Lee (nixstory@gmail.com)
 
+#import "RCTAesCrypto.h"
+#import "SecurityUtil.h"
 #import <CommonCrypto/CommonCryptor.h>
-#import <CommonCrypto/CommonDigest.h>
-#import <CommonCrypto/CommonKeyDerivation.h>
 
 #import "AesCrypt.h"
 
