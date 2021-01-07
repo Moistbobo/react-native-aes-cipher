@@ -1,3 +1,10 @@
+# Note
+
+This is a modified version of the original package where the android implementation has been replaced with the one found here
+https://github.com/rocwong-cn/react-native-aes-kit
+
+This fork was created as the original android implementation would cause an issue in one of my applications. Therefore, I created a fork and replaced the android implementation with one that would work with my app.
+
 # React Native AES 128/192/256
 
 AES 128/192/256 for react-native
