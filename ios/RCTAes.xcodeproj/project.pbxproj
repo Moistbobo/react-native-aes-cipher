@@ -12,7 +12,6 @@
 		6793992D25A7489700E1E8F5 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793992925A7489700E1E8F5 /* GTMBase64.m */; };
 		6793992E25A7489700E1E8F5 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793992C25A7489700E1E8F5 /* NSData+AES.m */; };
 		6793993225A7493D00E1E8F5 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6793993025A7493D00E1E8F5 /* SecurityUtil.m */; };
-		9BE20B5B1E4E1A3700696172 /* AesCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE20B5A1E4E1A3700696172 /* AesCrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,8 +38,6 @@
 		6793992C25A7489700E1E8F5 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		6793993025A7493D00E1E8F5 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		6793993125A7493D00E1E8F5 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
-		9BE20B591E4E1A3700696172 /* AesCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AesCrypt.h; sourceTree = "<group>"; };
-		9BE20B5A1E4E1A3700696172 /* AesCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesCrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,18 +73,8 @@
 				6793992625A747E400E1E8F5 /* AESKit */,
 				32D980E01BE9F11C00FA27E5 /* RCTAes.h */,
 				32D980E21BE9F11C00FA27E5 /* RCTAes.m */,
-				32D981161BE9F1B600FA27E5 /* lib */,
 			);
 			path = RCTAes;
-			sourceTree = "<group>";
-		};
-		32D981161BE9F1B600FA27E5 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9BE20B591E4E1A3700696172 /* AesCrypt.h */,
-				9BE20B5A1E4E1A3700696172 /* AesCrypt.m */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		6793992625A747E400E1E8F5 /* AESKit */ = {
@@ -161,7 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE20B5B1E4E1A3700696172 /* AesCrypt.m in Sources */,
 				6793992D25A7489700E1E8F5 /* GTMBase64.m in Sources */,
 				6793992E25A7489700E1E8F5 /* NSData+AES.m in Sources */,
 				6793993225A7493D00E1E8F5 /* SecurityUtil.m in Sources */,
